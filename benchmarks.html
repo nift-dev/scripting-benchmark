@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#0b0d0f">
+      <meta name="description" content="Transparent, reproducible benchmarks for Nift and popular scripting languages.">
+      <title>Benchmarks · Nift Scripting Benchmark</title>
+      <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script defer src="assets/js/site.js"></script></head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./"><span class="brand-mark">n/</span><span>Nift Bench</span></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="./benchmarks.html">Benchmarks</a><a href="./categories.html">Categories</a><a href="./languages.html">Languages</a><a href="./methodology.html">Methodology</a>
+  </nav>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" aria-hidden="true">
+  <nav><a href="./">Overview</a><a href="./benchmarks.html">Benchmarks</a><a href="./categories.html">Categories</a><a href="./languages.html">Languages</a><a href="./methodology.html">Methodology</a></nav>
+  <p>Transparent, reproducible scripting benchmarks.</p>
+</div>
+<main><div class="wrap"><header class="page-head"><div class="kicker">538 measured results</div><h1>Benchmarks</h1><p class="lede">Filter the retained corpus by workload, category, mode and runtime. “vs Nift” is the selected runtime's median divided by Nift's median for the same workload/size/mode; above 1× means that row took longer than Nift.</p></header><section class="data-shell"><div class="toolbar"><input data-filter="q" placeholder="Search benchmarks…"><select data-filter="category"><option value="">All categories</option></select><select data-filter="mode"><option value="">All modes</option><option>cold</option><option>warm</option></select><select data-filter="language"><option value="">All languages</option></select><select data-filter="size"><option value="">All sizes</option></select></div><div class="results-meta" data-results-meta></div><div class="results" data-results="data/results.json"></div></section></div></main>
+<footer><span>Nift Scripting Benchmark</span><span>Results are data, not a verdict.</span></footer>
+</body>
+</html>

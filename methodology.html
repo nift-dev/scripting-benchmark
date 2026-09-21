@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#0b0d0f">
+      <meta name="description" content="Transparent, reproducible benchmarks for Nift and popular scripting languages.">
+      <title>Methodology · Nift Scripting Benchmark</title>
+      <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script defer src="assets/js/site.js"></script></head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./"><span class="brand-mark">n/</span><span>Nift Bench</span></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="./benchmarks.html">Benchmarks</a><a href="./categories.html">Categories</a><a href="./languages.html">Languages</a><a href="./methodology.html">Methodology</a>
+  </nav>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" aria-hidden="true">
+  <nav><a href="./">Overview</a><a href="./benchmarks.html">Benchmarks</a><a href="./categories.html">Categories</a><a href="./languages.html">Languages</a><a href="./methodology.html">Methodology</a></nav>
+  <p>Transparent, reproducible scripting benchmarks.</p>
+</div>
+<main><div class="wrap"><header class="page-head"><div class="kicker">Rules before results</div><h1>Methodology</h1><p class="lede">The benchmark is designed to discover Nift's performance, not manufacture a win.</p></header><article class="section prose"><h2>Comparable work</h2><p>Implementations preserve the same algorithm and asymptotic complexity while allowing natural language idioms. Inputs are deterministic and shared. Pathological implementations are rejected rather than used to make another runtime look slow.</p><h2>Cold and warm are different questions</h2><p>Process startup is benchmarked explicitly. Very short algorithmic workloads run repeated iterations inside one process so startup does not dominate execution measurements.</p><h2>Measurements</h2><p>Record wall time, CPU time, peak RSS, source lines/bytes, runtime versions, machine details and raw samples. Selected workloads use ordinary and enlarged inputs to expose both scripting-scale latency and sustained runtime behaviour.</p><h2>Results contract</h2><p>The website consumes generated JSON. Benchmark tooling owns the measurements; presentation code does not rewrite them.</p><pre>{
+  "schema_version": 1,
+  "results": [{
+    "benchmark": "edit-distance",
+    "category": "dynamic-programming",
+    "language": "Nift",
+    "median_ms": 0.0,
+    "peak_rss_mb": 0.0,
+    "loc": 0
+  }]
+}</pre><h2>No recursion requirement</h2><p>Where traversal or orchestration can naturally use an explicit queue, benchmark harness scripts and practical scripting implementations should favour queues over recursion. Algorithm benchmarks whose subject is specifically recursion may still test recursion deliberately and label that fact.</p></article></div></main>
+<footer><span>Nift Scripting Benchmark</span><span>Results are data, not a verdict.</span></footer>
+</body>
+</html>
