@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "sanity/noop/large/luajit",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 0.789,
+  "cpu_ms": null,
+  "peak_rss_kb": 57632,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

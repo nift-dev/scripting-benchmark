@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/arithmetic/v1/small/bash",
+  "sample": 2,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 7.034,
+  "cpu_ms": null,
+  "peak_rss_kb": 3676,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

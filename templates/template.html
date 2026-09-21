@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>@input("templates/head.html")</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="@path('/')"><span class="brand-mark">n/</span><span>Nift Bench</span></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <a href="@path('benchmarks')">Benchmarks</a><a href="@path('categories')">Categories</a><a href="@path('languages')">Languages</a><a href="@path('methodology')">Methodology</a>
+  </nav>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" aria-hidden="true">
+  <nav><a href="@path('/')">Overview</a><a href="@path('benchmarks')">Benchmarks</a><a href="@path('categories')">Categories</a><a href="@path('languages')">Languages</a><a href="@path('methodology')">Methodology</a></nav>
+  <p>Transparent, reproducible scripting benchmarks.</p>
+</div>
+<main>@content</main>
+<footer><span>Nift Scripting Benchmark</span><span>Results are data, not a verdict.</span></footer>
+</body>
+</html>

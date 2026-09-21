@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "graphs-trees-search/bfs/large/python",
+  "sample": 1,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 53.718,
+  "cpu_ms": null,
+  "peak_rss_kb": 58604,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

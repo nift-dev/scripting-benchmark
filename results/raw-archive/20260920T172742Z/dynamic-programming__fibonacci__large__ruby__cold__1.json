@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "dynamic-programming/fibonacci/large/ruby",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 55.746,
+  "cpu_ms": null,
+  "peak_rss_kb": 58572,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

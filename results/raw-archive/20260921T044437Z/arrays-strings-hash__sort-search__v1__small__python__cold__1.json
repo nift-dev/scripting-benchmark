@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/sort-search/v1/small/python",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 15.934,
+  "cpu_ms": null,
+  "peak_rss_kb": 9824,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

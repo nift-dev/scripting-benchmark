@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/function-calls/v1/large/ruby",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 49.391,
+  "cpu_ms": null,
+  "peak_rss_kb": 19416,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

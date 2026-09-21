@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/strings/v1/small/node",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 82.071,
+  "cpu_ms": null,
+  "peak_rss_kb": 58064,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

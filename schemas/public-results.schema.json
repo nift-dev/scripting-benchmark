@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public benchmark results",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "results"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "benchmark",
+          "category",
+          "language"
+        ],
+        "properties": {
+          "benchmark": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "runtime_id": {
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "cold",
+              "warm"
+            ]
+          },
+          "median_ms": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "peak_rss_mb": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "loc": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "bytes": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "samples": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

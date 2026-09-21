@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "arrays-strings-hash/two-pointer/small/luajit",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 1.073,
+  "cpu_ms": null,
+  "peak_rss_kb": 138612,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

@@ -1,0 +1,14 @@
+[
+  "graphs-trees-search/bfs/small/nift",
+  "graphs-trees-search/bfs/small/python",
+  "graphs-trees-search/bfs/small/ruby",
+  "graphs-trees-search/bfs/small/lua54",
+  "graphs-trees-search/bfs/small/luajit",
+  "graphs-trees-search/bfs/small/node",
+  "graphs-trees-search/bfs/large/nift",
+  "graphs-trees-search/bfs/large/python",
+  "graphs-trees-search/bfs/large/ruby",
+  "graphs-trees-search/bfs/large/lua54",
+  "graphs-trees-search/bfs/large/luajit",
+  "graphs-trees-search/bfs/large/node"
+]

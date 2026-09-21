@@ -1,0 +1,4 @@
+local tree='benchmarks/sources/filesystem/traverse/small_tree'
+local p=io.popen('find '..tree..' -name "*.txt" | wc -l')
+print(p:read('*l'))
+p:close()

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/strings/v1/large/lua54",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 2.616,
+  "cpu_ms": null,
+  "peak_rss_kb": 3036,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

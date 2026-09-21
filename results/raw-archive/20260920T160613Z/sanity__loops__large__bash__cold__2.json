@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "sanity/loops/large/bash",
+  "sample": 2,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 157.844,
+  "cpu_ms": null,
+  "peak_rss_kb": 64592,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

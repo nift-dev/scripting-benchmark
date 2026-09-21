@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "arrays-strings-hash/two-pointer/small/python",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 10.978,
+  "cpu_ms": null,
+  "peak_rss_kb": 58620,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

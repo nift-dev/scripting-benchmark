@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "sanity/arithmetic/small/luajit",
+  "sample": 2,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 1.81,
+  "cpu_ms": null,
+  "peak_rss_kb": 58656,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

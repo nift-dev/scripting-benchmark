@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "graphs-trees-search/bfs/large/ruby",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 75.971,
+  "cpu_ms": null,
+  "peak_rss_kb": 58604,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

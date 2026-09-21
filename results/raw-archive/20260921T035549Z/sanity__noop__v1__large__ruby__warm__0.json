@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/noop/v1/large/ruby",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 41.162,
+  "cpu_ms": null,
+  "peak_rss_kb": 19288,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/map-set/v1/small/lua54",
+  "sample": 1,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 3.131,
+  "cpu_ms": null,
+  "peak_rss_kb": 2876,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

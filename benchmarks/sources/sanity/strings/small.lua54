@@ -1,0 +1,2 @@
+local s = string.rep("a", 1000)
+print(#s)

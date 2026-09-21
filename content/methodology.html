@@ -1,0 +1,11 @@
+<div class="wrap"><header class="page-head"><div class="kicker">Rules before results</div><h1>Methodology</h1><p class="lede">The benchmark is designed to discover Nift's performance, not manufacture a win.</p></header><article class="section prose"><h2>Comparable work</h2><p>Implementations preserve the same algorithm and asymptotic complexity while allowing natural language idioms. Inputs are deterministic and shared. Pathological implementations are rejected rather than used to make another runtime look slow.</p><h2>Cold and warm are different questions</h2><p>Process startup is benchmarked explicitly. Very short algorithmic workloads run repeated iterations inside one process so startup does not dominate execution measurements.</p><h2>Measurements</h2><p>Record wall time, CPU time, peak RSS, source lines/bytes, runtime versions, machine details and raw samples. Selected workloads use ordinary and enlarged inputs to expose both scripting-scale latency and sustained runtime behaviour.</p><h2>Results contract</h2><p>The website consumes generated JSON. Benchmark tooling owns the measurements; presentation code does not rewrite them.</p><pre>{
+  "schema_version": 1,
+  "results": [{
+    "benchmark": "edit-distance",
+    "category": "dynamic-programming",
+    "language": "Nift",
+    "median_ms": 0.0,
+    "peak_rss_mb": 0.0,
+    "loc": 0
+  }]
+}</pre><h2>No recursion requirement</h2><p>Where traversal or orchestration can naturally use an explicit queue, benchmark harness scripts and practical scripting implementations should favour queues over recursion. Algorithm benchmarks whose subject is specifically recursion may still test recursion deliberately and label that fact.</p></article></div>

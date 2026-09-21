@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/allocation/v1/large/lua54",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 4.681,
+  "cpu_ms": null,
+  "peak_rss_kb": 4476,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

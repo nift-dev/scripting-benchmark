@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/loops/v1/large/lua54",
+  "sample": 3,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 3.039,
+  "cpu_ms": null,
+  "peak_rss_kb": 2760,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

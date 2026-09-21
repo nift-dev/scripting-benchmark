@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "arrays-strings-hash/scan/large/nift",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 3135.634,
+  "cpu_ms": null,
+  "peak_rss_kb": 58676,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

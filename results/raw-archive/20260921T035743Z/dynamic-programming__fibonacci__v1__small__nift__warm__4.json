@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "dynamic-programming/fibonacci/v1/small/nift",
+  "sample": 4,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 5.587,
+  "cpu_ms": null,
+  "peak_rss_kb": 5904,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

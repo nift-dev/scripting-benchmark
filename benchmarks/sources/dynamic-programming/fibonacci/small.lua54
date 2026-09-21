@@ -1,0 +1,3 @@
+local a,b=0,1
+for i=2,30 do local c=a+b; a,b=b,c end
+print(b)

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "graphs-trees-search/bfs/large/luajit",
+  "sample": 1,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 14.69,
+  "cpu_ms": null,
+  "peak_rss_kb": 58604,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

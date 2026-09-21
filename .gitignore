@@ -1,0 +1,4 @@
+.nift/.lock
+results/raw/
+results/derived/
+results/environment.json

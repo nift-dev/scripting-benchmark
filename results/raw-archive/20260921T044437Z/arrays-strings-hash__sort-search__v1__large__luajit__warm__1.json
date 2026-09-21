@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/sort-search/v1/large/luajit",
+  "sample": 1,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 23.009,
+  "cpu_ms": null,
+  "peak_rss_kb": 3848,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

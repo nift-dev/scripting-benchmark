@@ -1,0 +1,22 @@
+local W=200
+local grid={}
+for r=0,W-1 do grid[r]={} for c=0,W-1 do local w=0
+  if (r*7+c*13)%5==0 and r>0 and r<W-1 and c>0 and c<W-1 then w=1 end
+  grid[r][c]=w end end
+local dist={}
+for r=0,W-1 do dist[r]={} for c=0,W-1 do dist[r][c]=-1 end end
+dist[0][0]=0
+local q={0,0}; local qi=1; local goal=W-1
+while qi<=#q do
+  local cr,cc=q[qi],q[qi+1]; qi=qi+2
+  if cr==goal and cc==goal then break end
+  local dirs={{1,0},{-1,0},{0,1},{0,-1}}
+  for i=1,4 do
+    local dr,dc=dirs[i][1],dirs[i][2]
+    local nr,nc=cr+dr,cc+dc
+    if nr>=0 and nr<W and nc>=0 and nc<W and grid[nr][nc]==0 and dist[nr][nc]==-1 then
+      dist[nr][nc]=dist[cr][cc]+1; q[#q+1]=nr; q[#q+1]=nc
+    end
+  end
+end
+print(dist[goal][goal])

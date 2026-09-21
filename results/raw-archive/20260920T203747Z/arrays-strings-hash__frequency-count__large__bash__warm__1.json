@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "arrays-strings-hash/frequency-count/large/bash",
+  "sample": 1,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 315.453,
+  "cpu_ms": null,
+  "peak_rss_kb": 138612,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

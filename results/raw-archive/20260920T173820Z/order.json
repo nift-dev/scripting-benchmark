@@ -1,0 +1,14 @@
+[
+  "structured-data/json-parse/small/nift",
+  "structured-data/json-parse/small/python",
+  "structured-data/json-parse/small/ruby",
+  "structured-data/json-parse/small/node",
+  "structured-data/json-query/small/nift",
+  "structured-data/json-query/small/python",
+  "structured-data/json-query/small/ruby",
+  "structured-data/json-query/small/node",
+  "structured-data/json-transform/small/nift",
+  "structured-data/json-transform/small/python",
+  "structured-data/json-transform/small/ruby",
+  "structured-data/json-transform/small/node"
+]

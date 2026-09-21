@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "sanity/noop/small/node",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 81.725,
+  "cpu_ms": null,
+  "peak_rss_kb": 57540,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

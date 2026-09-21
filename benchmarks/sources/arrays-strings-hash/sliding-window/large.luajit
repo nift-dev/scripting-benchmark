@@ -1,0 +1,4 @@
+local a={}; for i=1,100000 do a[i]=i end; local k=10000
+local cur=0; for j=1,k do cur=cur+a[j] end; local best=cur
+for i=k+1,100000 do cur=cur-a[i-k]+a[i]; if cur>best then best=cur end end
+print(best)

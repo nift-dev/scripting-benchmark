@@ -1,0 +1,5 @@
+local s={}; for i=1,100000 do s[i]=true end
+local c=0; for _ in pairs(s) do c=c+1 end
+print(c)
+print(s[50000] and 1 or 0)
+print(s[100001] and 1 or 0)

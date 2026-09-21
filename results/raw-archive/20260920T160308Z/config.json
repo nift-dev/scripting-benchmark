@@ -1,0 +1,6 @@
+{
+  "warmup": 1,
+  "cold": 3,
+  "warm": 5,
+  "timeout_seconds": 60
+}

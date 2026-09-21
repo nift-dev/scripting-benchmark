@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "structured-data/json-parse/small/ruby",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 40.511,
+  "cpu_ms": null,
+  "peak_rss_kb": 19496,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

@@ -1,0 +1,16 @@
+[
+  "filesystem/traverse/small/nift",
+  "filesystem/traverse/small/python",
+  "filesystem/traverse/small/ruby",
+  "filesystem/traverse/small/lua54",
+  "filesystem/traverse/small/luajit",
+  "filesystem/traverse/small/node",
+  "filesystem/traverse/small/bash",
+  "filesystem/traverse/large/nift",
+  "filesystem/traverse/large/python",
+  "filesystem/traverse/large/ruby",
+  "filesystem/traverse/large/lua54",
+  "filesystem/traverse/large/luajit",
+  "filesystem/traverse/large/node",
+  "filesystem/traverse/large/bash"
+]

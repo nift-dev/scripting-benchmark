@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Raw benchmark sample",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "job_id",
+    "sample",
+    "mode",
+    "exit_code",
+    "correct",
+    "wall_ms"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "sample": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "mode": {
+      "enum": [
+        "cold",
+        "warm"
+      ]
+    },
+    "exit_code": {
+      "type": "integer"
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "wall_ms": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cpu_ms": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "peak_rss_kb": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "stdout_sha256": {
+      "type": "string"
+    },
+    "stderr_sha256": {
+      "type": "string"
+    }
+  }
+}

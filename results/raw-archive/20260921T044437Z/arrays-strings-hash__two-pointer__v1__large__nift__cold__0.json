@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/two-pointer/v1/large/nift",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 1558.103,
+  "cpu_ms": null,
+  "peak_rss_kb": 19316,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

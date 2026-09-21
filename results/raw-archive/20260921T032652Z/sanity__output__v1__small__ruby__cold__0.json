@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/output/v1/small/ruby",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 41.874,
+  "cpu_ms": null,
+  "peak_rss_kb": 19484,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

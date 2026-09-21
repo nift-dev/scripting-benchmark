@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/sliding-window/v1/small/ruby",
+  "sample": 2,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 47.537,
+  "cpu_ms": null,
+  "peak_rss_kb": 19496,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

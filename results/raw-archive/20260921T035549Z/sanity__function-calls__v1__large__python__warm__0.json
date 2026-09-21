@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/function-calls/v1/large/python",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 19.55,
+  "cpu_ms": null,
+  "peak_rss_kb": 9616,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

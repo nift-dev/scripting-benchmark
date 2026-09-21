@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "arrays-strings-hash/sort-search/v1/small/bash",
+  "sample": 2,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 14.623,
+  "cpu_ms": null,
+  "peak_rss_kb": 8488,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

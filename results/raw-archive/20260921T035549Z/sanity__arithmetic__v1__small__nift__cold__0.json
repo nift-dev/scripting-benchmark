@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/arithmetic/v1/small/nift",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 19.274,
+  "cpu_ms": null,
+  "peak_rss_kb": 6200,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

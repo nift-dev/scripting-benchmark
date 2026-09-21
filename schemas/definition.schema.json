@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Benchmark definition",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "campaign",
+    "languages",
+    "categories"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "campaign": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "array"
+    },
+    "categories": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/strings/v1/large/nift",
+  "sample": 4,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 1283.494,
+  "cpu_ms": null,
+  "peak_rss_kb": 26176,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

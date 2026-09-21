@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/function-calls/v1/large/node",
+  "sample": 1,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 86.529,
+  "cpu_ms": null,
+  "peak_rss_kb": 64784,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

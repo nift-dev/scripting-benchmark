@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "dynamic-programming/fibonacci/v1/large/lua54",
+  "sample": 0,
+  "mode": "cold",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 3.402,
+  "cpu_ms": null,
+  "peak_rss_kb": 2644,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

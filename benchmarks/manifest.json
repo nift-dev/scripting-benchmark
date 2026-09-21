@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "campaign": "initial-v1",
+  "languages": [
+    {
+      "id": "nift",
+      "label": "Nift",
+      "command": [
+        "../nift/nift",
+        "run",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "f"
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "command": [
+        "python3",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "py"
+    },
+    {
+      "id": "ruby",
+      "label": "Ruby",
+      "command": [
+        "ruby",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "rb"
+    },
+    {
+      "id": "lua54",
+      "label": "Lua 5.4",
+      "command": [
+        "lua5.4",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "lua54",
+      "excluded_categories": [
+        "structured-data"
+      ]
+    },
+    {
+      "id": "luajit",
+      "label": "LuaJIT 2.1",
+      "command": [
+        "luajit",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "luajit",
+      "excluded_categories": [
+        "structured-data"
+      ]
+    },
+    {
+      "id": "node",
+      "label": "Node.js",
+      "command": [
+        "node",
+        "{source}"
+      ],
+      "scope": "all",
+      "extension": "js"
+    },
+    {
+      "id": "bash",
+      "label": "Bash",
+      "command": [
+        "bash",
+        "{source}"
+      ],
+      "scope": "shell-and-practical",
+      "excluded_categories": [
+        "dynamic-programming",
+        "graphs-trees-search",
+        "leetcode-breadth",
+        "structured-data"
+      ],
+      "exclusion_reason": "Bash participates where shell scripting is credible; it is not forced into algorithm workloads.",
+      "extension": "sh"
+    }
+  ],
+  "sizes": [
+    "small",
+    "large"
+  ],
+  "categories": [
+    {
+      "id": "sanity",
+      "benchmarks": [
+        "noop",
+        "output",
+        "arithmetic",
+        "loops",
+        "function-calls",
+        "strings",
+        "allocation"
+      ]
+    },
+    {
+      "id": "arrays-strings-hash",
+      "benchmarks": [
+        "scan",
+        "frequency-count",
+        "two-pointer",
+        "sliding-window",
+        "sort-search",
+        "map-set"
+      ]
+    },
+    {
+      "id": "dynamic-programming",
+      "benchmarks": [
+        "fibonacci",
+        "coin-change",
+        "lcs",
+        "edit-distance",
+        "knapsack-01",
+        "lis",
+        "grid-cost",
+        "interval-dp"
+      ]
+    },
+    {
+      "id": "graphs-trees-search",
+      "benchmarks": [
+        "bfs",
+        "dfs",
+        "topological-sort",
+        "shortest-path",
+        "tree-search"
+      ]
+    },
+    {
+      "id": "structured-data",
+      "benchmarks": [
+        "collections",
+        "group-index",
+        "json-parse",
+        "json-query",
+        "json-transform",
+        "json-serialize",
+        "json-traverse",
+        "json-mutate"
+      ]
+    },
+    {
+      "id": "filesystem",
+      "benchmarks": [
+        "traverse",
+        "glob-filter",
+        "metadata-filter",
+        "read-transform",
+        "copy-move"
+      ]
+    },
+    {
+      "id": "sqlite",
+      "benchmarks": [
+        "open-connect",
+        "read",
+        "filtered-query",
+        "insert-batch",
+        "transaction",
+        "json-to-sqlite"
+      ]
+    },
+    {
+      "id": "mixed-scripting",
+      "benchmarks": [
+        "project-inventory",
+        "data-pipeline",
+        "sqlite-maintenance"
+      ]
+    },
+    {
+      "id": "shell",
+      "benchmarks": [
+        "cold-start",
+        "navigation-query",
+        "glob-filter-pipeline",
+        "transform-pipeline",
+        "small-automation"
+      ]
+    },
+    {
+      "id": "leetcode-breadth",
+      "benchmarks": [
+        "stack-queue",
+        "binary-search",
+        "greedy",
+        "backtracking",
+        "matrix-grid",
+        "combinatorial",
+        "parsing"
+      ]
+    }
+  ],
+  "measurement": {
+    "cold_samples": 30,
+    "warm_samples": 30,
+    "timeout_seconds": 30,
+    "ordinary_jobs_concurrent": false,
+    "order": "deterministically-rotated",
+    "raw_samples_retained": true
+  },
+  "id_format": "<category>/<benchmark>/<size>/<language>",
+  "benchmark_versions": {
+    "json-parse": 2
+  }
+}

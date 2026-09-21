@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/function-calls/v1/small/nift",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 33.735,
+  "cpu_ms": null,
+  "peak_rss_kb": 6192,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

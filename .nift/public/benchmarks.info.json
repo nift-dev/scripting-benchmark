@@ -1,0 +1,32 @@
+{
+  "name": "benchmarks",
+  "title": "Benchmarks",
+  "template": "templates/template.html",
+  "content": "content/benchmarks.html",
+  "output": "public/benchmarks.html",
+  "minify": false,
+  "minify-version": 0,
+  "pagination": false,
+  "pagination-items-per-page": 0,
+  "pagination-template": "",
+  "pagination-separator": "",
+  "pagination-pages": 0,
+  "project-fingerprint": "",
+  "hierarchy-fingerprint": "",
+  "dependencies": [
+    "content/benchmarks.html",
+    "templates/head.html",
+    "templates/template.html"
+  ],
+  "reqs": [
+    "public/assets/css/style.css",
+    "public/assets/images/favicon.svg",
+    "public/assets/js/site.js",
+    "public/benchmarks.html",
+    "public/categories.html",
+    "public/data/results.json",
+    "public/index.html",
+    "public/languages.html",
+    "public/methodology.html"
+  ]
+}

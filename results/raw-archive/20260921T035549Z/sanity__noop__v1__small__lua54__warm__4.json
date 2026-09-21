@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "job_id": "sanity/noop/v1/small/lua54",
+  "sample": 4,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 1.823,
+  "cpu_ms": null,
+  "peak_rss_kb": 2552,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

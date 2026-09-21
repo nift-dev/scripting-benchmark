@@ -1,0 +1,14 @@
+[
+  "dynamic-programming/fibonacci/v1/small/nift",
+  "dynamic-programming/fibonacci/v1/small/python",
+  "dynamic-programming/fibonacci/v1/small/ruby",
+  "dynamic-programming/fibonacci/v1/small/lua54",
+  "dynamic-programming/fibonacci/v1/small/luajit",
+  "dynamic-programming/fibonacci/v1/small/node",
+  "dynamic-programming/fibonacci/v1/large/nift",
+  "dynamic-programming/fibonacci/v1/large/python",
+  "dynamic-programming/fibonacci/v1/large/ruby",
+  "dynamic-programming/fibonacci/v1/large/lua54",
+  "dynamic-programming/fibonacci/v1/large/luajit",
+  "dynamic-programming/fibonacci/v1/large/node"
+]

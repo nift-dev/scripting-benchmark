@@ -1,0 +1,3 @@
+local c = 0
+for i = 1, 1000 do c = c + 1 end
+print(c)

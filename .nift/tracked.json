@@ -1,0 +1,39 @@
+{
+  "tracked": [
+    {
+      "name": "/",
+      "title": "Nift Scripting Benchmark",
+      "page": "overview",
+      "description": "A reproducible cross-language scripting benchmark.",
+      "template": "templates/template.html"
+    },
+    {
+      "name": "benchmarks",
+      "title": "Benchmarks",
+      "page": "benchmarks",
+      "description": "Browse scripting benchmark results.",
+      "template": "templates/template.html"
+    },
+    {
+      "name": "categories",
+      "title": "Categories",
+      "page": "categories",
+      "description": "Explore benchmark workload categories.",
+      "template": "templates/template.html"
+    },
+    {
+      "name": "languages",
+      "title": "Languages",
+      "page": "languages",
+      "description": "Languages included in the benchmark corpus.",
+      "template": "templates/template.html"
+    },
+    {
+      "name": "methodology",
+      "title": "Methodology",
+      "page": "methodology",
+      "description": "Benchmark methodology and reproducibility rules.",
+      "template": "templates/template.html"
+    }
+  ]
+}

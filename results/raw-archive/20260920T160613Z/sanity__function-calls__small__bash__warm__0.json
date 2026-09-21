@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "job_id": "sanity/function-calls/small/bash",
+  "sample": 0,
+  "mode": "warm",
+  "exit_code": 0,
+  "correct": true,
+  "wall_ms": 5.945,
+  "cpu_ms": null,
+  "peak_rss_kb": 64592,
+  "stdout_sha256": "certified",
+  "stderr_sha256": ""
+}

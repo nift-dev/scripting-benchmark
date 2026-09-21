@@ -1,0 +1,1 @@
+echo cold-start-ok
