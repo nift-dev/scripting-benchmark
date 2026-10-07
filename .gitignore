@@ -2,3 +2,5 @@
 results/raw/
 results/derived/
 results/environment.json
+
+__pycache__/

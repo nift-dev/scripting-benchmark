@@ -213,6 +213,7 @@
   },
   "id_format": "<category>/<benchmark>/<size>/<language>",
   "benchmark_versions": {
-    "json-parse": 2
+    "json-parse": 2,
+    "json-transform": 2
   }
 }

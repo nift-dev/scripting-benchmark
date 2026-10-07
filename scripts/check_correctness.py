@@ -3,6 +3,7 @@
 output byte-for-byte across all participating runtimes before any timing is
 trusted. Fails loudly on any mismatch (including missing source or golden).
 """
+from decimal import Decimal, InvalidOperation
 import json
 import subprocess
 import sys
@@ -22,8 +23,9 @@ def equivalent(a: bytes, b: bytes) -> bool:
     if ta == tb:
         return True
     try:
-        return float(ta) == float(tb)
-    except ValueError:
+        x,y=Decimal(ta.decode()),Decimal(tb.decode())
+        return x.is_finite() and y.is_finite() and x==y
+    except (InvalidOperation, UnicodeDecodeError):
         return False
 
 
@@ -62,7 +64,8 @@ def main():
                     if not src.exists():
                         failed.append((catid, bench, size, lid, "missing source"))
                         continue
-                    cmd = [c.replace("{source}", str(src)) for c in lang["command"]]
+                    command = [str(ROOT.parent / "nift/nift"), "{source}"] if lid == "nift" else lang["command"]
+                    cmd = [c.replace("{source}", str(src)) for c in command]
                     try:
                         # Small sizes prove equivalence; large re-verification is a
                         # lightweight spot check (timing is captured by the real
@@ -76,7 +79,7 @@ def main():
                         # machine.
                         print(f"note: {catid}/{bench}/{size}/{lid} exceeds 30s at this size")
                         continue
-                    if not equivalent(p.stdout, expected):
+                    if p.returncode != 0 or not equivalent(p.stdout, expected):
                         failed.append((catid, bench, size, lid, f"stdout mismatch (exit {p.returncode})"))
                     else:
                         ok += 1

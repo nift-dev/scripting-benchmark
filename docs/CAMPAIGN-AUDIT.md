@@ -45,3 +45,15 @@ Comparability: direct timing without GNU time, exact oracle changes, explicit
 run selection, current binaries and cache-label corrections break direct
 comparison with published medians. Historical data is not a baseline for speedup
 claims. Algorithm/FFI/external-helper differences must be discussed per workload.
+
+Implementation inspection addendum: Nift json-transform writes/reads a scratch
+JSON file while competitors construct arrays directly. Correct Nift to construct
+the same records in memory (workload version 2). JSON parse/traverse/mutate all
+include the same fixture read. BFS implementations use different idiomatic
+queue/distance structures: describe this as implementation comparison, not
+isolated container speed. The existing Nift run/build command spellings are stale.
+
+Measurement refinement: compile a small C supervisor outside timed intervals.
+It times fork/exec through wait4 with CLOCK_MONOTONIC and reports child RSS,
+avoiding Python pre-exec high-water contamination and wrapper startup overhead.
+Absolute latency excludes Python orchestration and supervisor launch.
