@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Run explicit complete workload families; never merge historical campaigns."""
-import argparse, json, shutil, tempfile
+import argparse, hashlib, json, shutil, tempfile
 from pathlib import Path
 from decimal import Decimal, InvalidOperation
 from campaign_measure import measure, isolated_env, metadata, identity, summary
@@ -44,7 +44,9 @@ def main():
                 if not src.exists() or not gold.exists(): raise SystemExit('incomplete family: '+str(src))
                 jobs.append(dict(id=f'{family}/{size}/{lang["id"]}',
                                  command=[c.replace('{source}',str(src)) for c in cmd],
-                                 golden=gold, samples=[]))
+                                 golden=gold, source_sha256=hashlib.sha256(src.read_bytes()).hexdigest(),
+                                 oracle_sha256=hashlib.sha256(gold.read_bytes()).hexdigest(),
+                                 workload_version=manifest.get('benchmark_versions',{}).get(bench,1), samples=[]))
     result=dict(schema=3,machine=metadata(ROOT),tools=tools,families=families,
                 mode='fresh-process-repeated',warmups=a.warmups,samples=a.samples,jobs=[],publishable=False)
     dest=Path(a.output); dest.parent.mkdir(parents=True,exist_ok=True)

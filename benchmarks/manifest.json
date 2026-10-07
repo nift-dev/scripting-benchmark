@@ -7,7 +7,6 @@
       "label": "Nift",
       "command": [
         "../nift/nift",
-        "run",
         "{source}"
       ],
       "scope": "all",
