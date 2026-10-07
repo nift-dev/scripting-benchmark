@@ -110,7 +110,7 @@
         "frequency-count",
         "two-pointer",
         "sliding-window",
-        "sort-search",
+        "sort-index",
         "map-set"
       ]
     },
@@ -213,6 +213,8 @@
   "id_format": "<category>/<benchmark>/<size>/<language>",
   "benchmark_versions": {
     "json-parse": 2,
-    "json-transform": 2
+    "json-transform": 2,
+    "frequency-count": 2,
+    "sort-index": 2
   }
 }

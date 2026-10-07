@@ -57,3 +57,5 @@ Measurement refinement: compile a small C supervisor outside timed intervals.
 It times fork/exec through wait4 with CLOCK_MONOTONIC and reports child RSS,
 avoiding Python pre-exec high-water contamination and wrapper startup overhead.
 Absolute latency excludes Python orchestration and supervisor launch.
+
+Final corpus audit: frequency-count v2 streams map counters for Nift, matching peers instead of retaining grouped arrays. sort-search is renamed sort-index v2 because it sorts and reads indices, without searching. two-pointer is omitted from the official series because it only constructs an array and reads endpoints. The earlier 202-job series remains diagnostic evidence; corrected series is rerun in full.

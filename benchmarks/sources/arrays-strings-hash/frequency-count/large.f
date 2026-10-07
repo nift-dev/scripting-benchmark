@@ -1,6 +1,11 @@
-arr := []
+counts := map()
 i := 1
-while(i <= 100000) { arr.push(i % 10); i += 1 }
-g := arr.group_by(x => x)
-print(g.size())
-print(g["0"].size())
+while(i <= 100000) {
+ key := (i % 10).to_string()
+ count := 0
+ if(counts.contains(key)) { count = counts.get(key) }
+ counts.set(key, count + 1)
+ i += 1
+}
+print(counts.size())
+print(counts.get("0"))
