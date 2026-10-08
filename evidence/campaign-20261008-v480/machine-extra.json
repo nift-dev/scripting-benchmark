@@ -1,0 +1,13 @@
+{
+  "/sys/devices/system/cpu/cpu0/cpufreq": {},
+  "/sys/fs/cgroup": {
+    "cpu.stat": "usage_usec 287368280\nuser_usec 241436378\nsystem_usec 45931902\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+  },
+  "affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "utc": "2026-10-08T07:24:39Z"
+}
