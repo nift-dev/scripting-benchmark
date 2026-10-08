@@ -1,0 +1,23 @@
+{
+  "series": "20261009-v490",
+  "suite": "scripting",
+  "official_raw_files": {
+    "scripting.json": {
+      "schema": 3,
+      "sha256": "326e36624180f2c8b9f814d914299dba8be0daa53a592f6da37e22a300741476",
+      "jobs": 188,
+      "measured_samples": 1880,
+      "retained_warmups": 376
+    }
+  },
+  "helper_tests_before_and_after": 3,
+  "configuration_cases_before_and_after": null,
+  "source_definition_drift": false,
+  "summary_recomputation": "All retained distribution fields equal independent summarizer output",
+  "clean_checkout": true,
+  "affinity": [
+    0
+  ],
+  "no_discarded_samples": true,
+  "smoke_full_matrix_passed": true
+}

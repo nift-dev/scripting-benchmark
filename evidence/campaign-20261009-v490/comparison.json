@@ -1,0 +1,1699 @@
+{
+  "note": "Cross-node ratios are review signals, not version speedups. Hardware, runtime versions, cache state and shared CPU scheduling may differ.",
+  "prior_series": "20261008-v480",
+  "current_series": "20261009-v490",
+  "cases": [
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/nift",
+      "prior_median_ms": 3.677761,
+      "current_median_ms": 5.407856000000001,
+      "prior_p99_ms": 5.262581750000001,
+      "current_p99_ms": 13.182183120000001,
+      "cross_node_ratio_for_internal_review": 1.470420726088509
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/nift",
+      "prior_median_ms": 2.717397,
+      "current_median_ms": 3.1913425,
+      "prior_p99_ms": 2.91448009,
+      "current_p99_ms": 5.047528290000001,
+      "cross_node_ratio_for_internal_review": 1.1744115784333315
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/nift",
+      "prior_median_ms": 3.1136445,
+      "current_median_ms": 3.8772710000000004,
+      "prior_p99_ms": 3.4745140799999996,
+      "current_p99_ms": 11.12386644,
+      "cross_node_ratio_for_internal_review": 1.2452516656927277
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/nift",
+      "prior_median_ms": 2.8904769999999997,
+      "current_median_ms": 3.4794834999999997,
+      "prior_p99_ms": 3.30644718,
+      "current_p99_ms": 4.48564553,
+      "cross_node_ratio_for_internal_review": 1.2037748440828278
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/nift",
+      "prior_median_ms": 4.1666235,
+      "current_median_ms": 5.338936,
+      "prior_p99_ms": 5.022013530000001,
+      "current_p99_ms": 11.653668130000002,
+      "cross_node_ratio_for_internal_review": 1.281357914867998
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/nift",
+      "prior_median_ms": 78.836518,
+      "current_median_ms": 89.25558799999999,
+      "prior_p99_ms": 105.97380161000001,
+      "current_p99_ms": 358.45723620000007,
+      "cross_node_ratio_for_internal_review": 1.1321604538647938
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/nift",
+      "prior_median_ms": 6.2128915,
+      "current_median_ms": 7.472266,
+      "prior_p99_ms": 7.060627330000001,
+      "current_p99_ms": 44.71174396000001,
+      "cross_node_ratio_for_internal_review": 1.202703443316208
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/nift",
+      "prior_median_ms": 292.9730985,
+      "current_median_ms": 217.7106625,
+      "prior_p99_ms": 301.47371425,
+      "current_p99_ms": 604.74637742,
+      "cross_node_ratio_for_internal_review": 0.7431080314699953
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/nift",
+      "prior_median_ms": 4.0637255,
+      "current_median_ms": 5.2258575,
+      "prior_p99_ms": 4.60048471,
+      "current_p99_ms": 13.82672534,
+      "cross_node_ratio_for_internal_review": 1.2859769932787044
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/nift",
+      "prior_median_ms": 95.1709505,
+      "current_median_ms": 117.2744335,
+      "prior_p99_ms": 114.37240268000001,
+      "current_p99_ms": 186.27478346,
+      "cross_node_ratio_for_internal_review": 1.2322503125572966
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/nift",
+      "prior_median_ms": 9.1116795,
+      "current_median_ms": 10.1807445,
+      "prior_p99_ms": 13.457286190000001,
+      "current_p99_ms": 36.962426750000006,
+      "cross_node_ratio_for_internal_review": 1.1173290829643427
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/nift",
+      "prior_median_ms": 540.7501055,
+      "current_median_ms": 458.98163750000003,
+      "prior_p99_ms": 603.69405619,
+      "current_p99_ms": 771.04680035,
+      "cross_node_ratio_for_internal_review": 0.8487869587664834
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/nift",
+      "prior_median_ms": 6.179409,
+      "current_median_ms": 8.4674335,
+      "prior_p99_ms": 6.651253280000001,
+      "current_p99_ms": 14.87421882,
+      "cross_node_ratio_for_internal_review": 1.3702659105425778
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/nift",
+      "prior_median_ms": 283.096441,
+      "current_median_ms": 341.556353,
+      "prior_p99_ms": 300.04728441,
+      "current_p99_ms": 364.12787684,
+      "cross_node_ratio_for_internal_review": 1.2065017553505732
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/nift",
+      "prior_median_ms": 10.6985745,
+      "current_median_ms": 12.215669,
+      "prior_p99_ms": 11.57904266,
+      "current_p99_ms": 16.395889139999998,
+      "cross_node_ratio_for_internal_review": 1.1418034243720976
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/nift",
+      "prior_median_ms": 1208.725378,
+      "current_median_ms": 1467.9111874999999,
+      "prior_p99_ms": 1359.35497621,
+      "current_p99_ms": 2801.58825998,
+      "cross_node_ratio_for_internal_review": 1.214429029304289
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/nift",
+      "prior_median_ms": 5.7410255,
+      "current_median_ms": 7.2708175,
+      "prior_p99_ms": 6.89839254,
+      "current_p99_ms": 12.354379699999999,
+      "cross_node_ratio_for_internal_review": 1.266466679167337
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/nift",
+      "prior_median_ms": 241.965541,
+      "current_median_ms": 263.9604345,
+      "prior_p99_ms": 264.61653886,
+      "current_p99_ms": 328.95128307,
+      "cross_node_ratio_for_internal_review": 1.090900933286199
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/nift",
+      "prior_median_ms": 3.2868915,
+      "current_median_ms": 3.61618,
+      "prior_p99_ms": 3.51295547,
+      "current_p99_ms": 5.03287502,
+      "cross_node_ratio_for_internal_review": 1.1001823455383302
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/nift",
+      "prior_median_ms": 161.876778,
+      "current_median_ms": 183.7723825,
+      "prior_p99_ms": 168.30644901,
+      "current_p99_ms": 230.85670696000003,
+      "cross_node_ratio_for_internal_review": 1.1352609359447468
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/nift",
+      "prior_median_ms": 11.2096915,
+      "current_median_ms": 12.7164055,
+      "prior_p99_ms": 12.11993919,
+      "current_p99_ms": 17.967733629999998,
+      "cross_node_ratio_for_internal_review": 1.1344117275662762
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/nift",
+      "prior_median_ms": 718.1993215,
+      "current_median_ms": 816.300945,
+      "prior_p99_ms": 750.34846423,
+      "current_p99_ms": 872.08101342,
+      "cross_node_ratio_for_internal_review": 1.1365938682524916
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/small/nift",
+      "prior_median_ms": 5.163679,
+      "current_median_ms": 6.4614015,
+      "prior_p99_ms": 5.96047448,
+      "current_p99_ms": 7.997907570000001,
+      "cross_node_ratio_for_internal_review": 1.251317423100855
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/large/nift",
+      "prior_median_ms": 201.22114950000002,
+      "current_median_ms": 266.34263450000003,
+      "prior_p99_ms": 246.81324786,
+      "current_p99_ms": 329.51959253999996,
+      "cross_node_ratio_for_internal_review": 1.3236314133072775
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/small/nift",
+      "prior_median_ms": 8.085059000000001,
+      "current_median_ms": 8.4617525,
+      "prior_p99_ms": 11.08926896,
+      "current_p99_ms": 12.5688951,
+      "cross_node_ratio_for_internal_review": 1.0465913112075
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/large/nift",
+      "prior_median_ms": 511.161066,
+      "current_median_ms": 549.713567,
+      "prior_p99_ms": 549.5972009999999,
+      "current_p99_ms": 680.8689968,
+      "cross_node_ratio_for_internal_review": 1.0754214347772724
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/small/nift",
+      "prior_median_ms": 7.0272115,
+      "current_median_ms": 8.4785115,
+      "prior_p99_ms": 8.03119263,
+      "current_p99_ms": 11.3228137,
+      "cross_node_ratio_for_internal_review": 1.20652573214852
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/large/nift",
+      "prior_median_ms": 388.8739965,
+      "current_median_ms": 435.14764149999996,
+      "prior_p99_ms": 415.3384319,
+      "current_p99_ms": 489.99720175000004,
+      "cross_node_ratio_for_internal_review": 1.1189939296956823
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/nift",
+      "prior_median_ms": 4.5154700000000005,
+      "current_median_ms": 6.0479535,
+      "prior_p99_ms": 9.7561671,
+      "current_p99_ms": 8.10267337,
+      "cross_node_ratio_for_internal_review": 1.3393851581341476
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/nift",
+      "prior_median_ms": 129.740194,
+      "current_median_ms": 125.5027135,
+      "prior_p99_ms": 148.66784036,
+      "current_p99_ms": 144.77238035000002,
+      "cross_node_ratio_for_internal_review": 0.9673387223392004
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/python",
+      "prior_median_ms": 23.2173675,
+      "current_median_ms": 29.589610999999998,
+      "prior_p99_ms": 33.54073313,
+      "current_p99_ms": 35.827551230000005,
+      "cross_node_ratio_for_internal_review": 1.2744602074287705
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/python",
+      "prior_median_ms": 20.712,
+      "current_median_ms": 25.6261115,
+      "prior_p99_ms": 27.511568689999997,
+      "current_p99_ms": 29.879096,
+      "cross_node_ratio_for_internal_review": 1.2372591492854383
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/python",
+      "prior_median_ms": 21.253473,
+      "current_median_ms": 22.3823485,
+      "prior_p99_ms": 26.36341392,
+      "current_p99_ms": 28.66778824,
+      "cross_node_ratio_for_internal_review": 1.0531148720964334
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/python",
+      "prior_median_ms": 20.9931215,
+      "current_median_ms": 22.1593825,
+      "prior_p99_ms": 26.20198909,
+      "current_p99_ms": 31.376797210000003,
+      "cross_node_ratio_for_internal_review": 1.0555544348180903
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/python",
+      "prior_median_ms": 21.0683975,
+      "current_median_ms": 24.8452105,
+      "prior_p99_ms": 26.997002990000002,
+      "current_p99_ms": 31.86231782,
+      "cross_node_ratio_for_internal_review": 1.1792643697746827
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/python",
+      "prior_median_ms": 29.51265,
+      "current_median_ms": 29.999992,
+      "prior_p99_ms": 41.36926191,
+      "current_p99_ms": 39.91617615,
+      "cross_node_ratio_for_internal_review": 1.0165129868039637
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/python",
+      "prior_median_ms": 21.091241,
+      "current_median_ms": 24.746523,
+      "prior_p99_ms": 28.62800086,
+      "current_p99_ms": 32.18975113,
+      "cross_node_ratio_for_internal_review": 1.1733080571219114
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/python",
+      "prior_median_ms": 33.7162185,
+      "current_median_ms": 39.8042045,
+      "prior_p99_ms": 43.80236216,
+      "current_p99_ms": 47.866050290000004,
+      "cross_node_ratio_for_internal_review": 1.1805655044025771
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/python",
+      "prior_median_ms": 20.973299500000003,
+      "current_median_ms": 22.7214785,
+      "prior_p99_ms": 25.94854325,
+      "current_p99_ms": 30.08440251,
+      "cross_node_ratio_for_internal_review": 1.0833525979066858
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/python",
+      "prior_median_ms": 28.400478,
+      "current_median_ms": 28.321593,
+      "prior_p99_ms": 36.18670297,
+      "current_p99_ms": 43.691535120000005,
+      "cross_node_ratio_for_internal_review": 0.9972224059045767
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/python",
+      "prior_median_ms": 20.781444999999998,
+      "current_median_ms": 22.9645255,
+      "prior_p99_ms": 27.85161351,
+      "current_p99_ms": 32.86726237,
+      "cross_node_ratio_for_internal_review": 1.1050495044978828
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/python",
+      "prior_median_ms": 56.371759499999996,
+      "current_median_ms": 60.7458435,
+      "prior_p99_ms": 71.44023149,
+      "current_p99_ms": 77.78854415,
+      "cross_node_ratio_for_internal_review": 1.0775935333364928
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/python",
+      "prior_median_ms": 20.5074465,
+      "current_median_ms": 24.0274645,
+      "prior_p99_ms": 25.81970881,
+      "current_p99_ms": 26.62330844,
+      "cross_node_ratio_for_internal_review": 1.17164584581508
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/python",
+      "prior_median_ms": 48.1669525,
+      "current_median_ms": 53.8658075,
+      "prior_p99_ms": 57.2362673,
+      "current_p99_ms": 64.27552697,
+      "cross_node_ratio_for_internal_review": 1.1183146266104338
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/python",
+      "prior_median_ms": 20.3024795,
+      "current_median_ms": 24.571608,
+      "prior_p99_ms": 24.20129452,
+      "current_p99_ms": 27.91378172,
+      "cross_node_ratio_for_internal_review": 1.2102762128143019
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/python",
+      "prior_median_ms": 26.671878999999997,
+      "current_median_ms": 29.3686875,
+      "prior_p99_ms": 32.03852141,
+      "current_p99_ms": 37.62931284,
+      "cross_node_ratio_for_internal_review": 1.1011105554280598
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/python",
+      "prior_median_ms": 21.0090945,
+      "current_median_ms": 23.3691055,
+      "prior_p99_ms": 27.38356932,
+      "current_p99_ms": 37.470152119999995,
+      "cross_node_ratio_for_internal_review": 1.1123328280521563
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/python",
+      "prior_median_ms": 32.600288,
+      "current_median_ms": 40.133915,
+      "prior_p99_ms": 41.885419940000006,
+      "current_p99_ms": 52.27428036,
+      "cross_node_ratio_for_internal_review": 1.2310908112222814
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/python",
+      "prior_median_ms": 21.769651500000002,
+      "current_median_ms": 22.17685,
+      "prior_p99_ms": 26.10316959,
+      "current_p99_ms": 26.26754762,
+      "cross_node_ratio_for_internal_review": 1.0187048699424517
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/python",
+      "prior_median_ms": 36.170007,
+      "current_median_ms": 41.157492,
+      "prior_p99_ms": 47.67705021,
+      "current_p99_ms": 55.68599015,
+      "cross_node_ratio_for_internal_review": 1.137890075608777
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/python",
+      "prior_median_ms": 21.461013,
+      "current_median_ms": 24.286417,
+      "prior_p99_ms": 30.039373769999997,
+      "current_p99_ms": 32.236659429999996,
+      "cross_node_ratio_for_internal_review": 1.131652872117453
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/python",
+      "prior_median_ms": 106.61234350000001,
+      "current_median_ms": 117.805245,
+      "prior_p99_ms": 145.58074974,
+      "current_p99_ms": 143.31063774999998,
+      "cross_node_ratio_for_internal_review": 1.1049869192679362
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/small/python",
+      "prior_median_ms": 29.3653665,
+      "current_median_ms": 31.933583499999997,
+      "prior_p99_ms": 38.05455514,
+      "current_p99_ms": 45.72558764,
+      "cross_node_ratio_for_internal_review": 1.0874573453731626
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/large/python",
+      "prior_median_ms": 89.94994700000001,
+      "current_median_ms": 111.68110250000001,
+      "prior_p99_ms": 125.79468073999999,
+      "current_p99_ms": 146.23923299,
+      "cross_node_ratio_for_internal_review": 1.2415916431835141
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/small/python",
+      "prior_median_ms": 29.260296,
+      "current_median_ms": 32.183632,
+      "prior_p99_ms": 35.6991674,
+      "current_p99_ms": 40.005425810000006,
+      "cross_node_ratio_for_internal_review": 1.0999079435149939
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/large/python",
+      "prior_median_ms": 83.757502,
+      "current_median_ms": 92.7226245,
+      "prior_p99_ms": 110.33519933,
+      "current_p99_ms": 107.85943478,
+      "cross_node_ratio_for_internal_review": 1.1070366508781504
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/small/python",
+      "prior_median_ms": 28.30755,
+      "current_median_ms": 31.274604,
+      "prior_p99_ms": 34.56893117,
+      "current_p99_ms": 44.01765605,
+      "cross_node_ratio_for_internal_review": 1.1048149345316003
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/large/python",
+      "prior_median_ms": 90.21366599999999,
+      "current_median_ms": 104.6249275,
+      "prior_p99_ms": 127.63501545000001,
+      "current_p99_ms": 122.85757577000001,
+      "cross_node_ratio_for_internal_review": 1.1597458804079641
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/python",
+      "prior_median_ms": 26.607315,
+      "current_median_ms": 29.2060395,
+      "prior_p99_ms": 35.0865466,
+      "current_p99_ms": 43.48828995,
+      "cross_node_ratio_for_internal_review": 1.0976695506480079
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/python",
+      "prior_median_ms": 34.741746500000005,
+      "current_median_ms": 36.248757,
+      "prior_p99_ms": 42.58849071,
+      "current_p99_ms": 50.275511980000005,
+      "cross_node_ratio_for_internal_review": 1.0433775112601202
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/ruby",
+      "prior_median_ms": 82.49390149999999,
+      "current_median_ms": 92.5820535,
+      "prior_p99_ms": 95.49795545,
+      "current_p99_ms": 101.90702571,
+      "cross_node_ratio_for_internal_review": 1.1222896701036744
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/ruby",
+      "prior_median_ms": 79.2581145,
+      "current_median_ms": 83.676152,
+      "prior_p99_ms": 102.46045558,
+      "current_p99_ms": 115.12340896,
+      "cross_node_ratio_for_internal_review": 1.0557423997261504
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/ruby",
+      "prior_median_ms": 75.053265,
+      "current_median_ms": 88.4526295,
+      "prior_p99_ms": 84.2925331,
+      "current_p99_ms": 104.44377367999999,
+      "cross_node_ratio_for_internal_review": 1.1785314003328171
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/ruby",
+      "prior_median_ms": 74.36652849999999,
+      "current_median_ms": 88.93253250000001,
+      "prior_p99_ms": 98.81800708,
+      "current_p99_ms": 109.65258195,
+      "cross_node_ratio_for_internal_review": 1.1958677417623444
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/ruby",
+      "prior_median_ms": 74.4617215,
+      "current_median_ms": 89.5450505,
+      "prior_p99_ms": 97.53243584,
+      "current_p99_ms": 95.05161357,
+      "cross_node_ratio_for_internal_review": 1.2025648708645555
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/ruby",
+      "prior_median_ms": 82.537147,
+      "current_median_ms": 90.33369450000001,
+      "prior_p99_ms": 87.74331029999999,
+      "current_p99_ms": 105.63091437,
+      "cross_node_ratio_for_internal_review": 1.0944610733879618
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/ruby",
+      "prior_median_ms": 75.2803385,
+      "current_median_ms": 88.968333,
+      "prior_p99_ms": 98.82179142,
+      "current_p99_ms": 107.83507768,
+      "cross_node_ratio_for_internal_review": 1.181826952066641
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/ruby",
+      "prior_median_ms": 82.602187,
+      "current_median_ms": 96.10832149999999,
+      "prior_p99_ms": 97.97814088,
+      "current_p99_ms": 111.31124575,
+      "cross_node_ratio_for_internal_review": 1.1635081950069917
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/ruby",
+      "prior_median_ms": 77.900834,
+      "current_median_ms": 85.2254855,
+      "prior_p99_ms": 92.21956869,
+      "current_p99_ms": 100.75671847000001,
+      "cross_node_ratio_for_internal_review": 1.0940253284066253
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/ruby",
+      "prior_median_ms": 83.5183,
+      "current_median_ms": 97.13448600000001,
+      "prior_p99_ms": 94.09568379000001,
+      "current_p99_ms": 118.64507265,
+      "cross_node_ratio_for_internal_review": 1.163032365361843
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/ruby",
+      "prior_median_ms": 76.6073085,
+      "current_median_ms": 88.33189949999999,
+      "prior_p99_ms": 83.25556066,
+      "current_p99_ms": 116.38286094,
+      "cross_node_ratio_for_internal_review": 1.1530479431998317
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/ruby",
+      "prior_median_ms": 107.223455,
+      "current_median_ms": 135.8882375,
+      "prior_p99_ms": 118.99922081999999,
+      "current_p99_ms": 156.61888832,
+      "cross_node_ratio_for_internal_review": 1.2673368667331228
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/ruby",
+      "prior_median_ms": 76.78808799999999,
+      "current_median_ms": 86.471282,
+      "prior_p99_ms": 92.81641186,
+      "current_p99_ms": 111.45784079,
+      "cross_node_ratio_for_internal_review": 1.1261028142802567
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/ruby",
+      "prior_median_ms": 88.7406575,
+      "current_median_ms": 99.91515749999999,
+      "prior_p99_ms": 101.03690975,
+      "current_p99_ms": 102.6166621,
+      "cross_node_ratio_for_internal_review": 1.1259231147797164
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/ruby",
+      "prior_median_ms": 76.651182,
+      "current_median_ms": 83.5471975,
+      "prior_p99_ms": 94.33913595,
+      "current_p99_ms": 105.5658132,
+      "cross_node_ratio_for_internal_review": 1.0899661990861405
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/ruby",
+      "prior_median_ms": 85.69562300000001,
+      "current_median_ms": 99.3167035,
+      "prior_p99_ms": 112.27627165999999,
+      "current_p99_ms": 112.61203464,
+      "cross_node_ratio_for_internal_review": 1.1589472136750787
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/ruby",
+      "prior_median_ms": 78.23279400000001,
+      "current_median_ms": 89.253698,
+      "prior_p99_ms": 83.22144782,
+      "current_p99_ms": 102.36185746000001,
+      "cross_node_ratio_for_internal_review": 1.1408731995434036
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/ruby",
+      "prior_median_ms": 102.83256349999999,
+      "current_median_ms": 119.1564815,
+      "prior_p99_ms": 141.41230948999998,
+      "current_p99_ms": 162.83140308,
+      "cross_node_ratio_for_internal_review": 1.1587426924351643
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/ruby",
+      "prior_median_ms": 77.43458749999999,
+      "current_median_ms": 88.2319785,
+      "prior_p99_ms": 82.24623087,
+      "current_p99_ms": 119.84013307000001,
+      "cross_node_ratio_for_internal_review": 1.1394388650937155
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/ruby",
+      "prior_median_ms": 92.398005,
+      "current_median_ms": 107.49870849999999,
+      "prior_p99_ms": 103.55464666,
+      "current_p99_ms": 133.90174325,
+      "cross_node_ratio_for_internal_review": 1.1634310556813428
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/ruby",
+      "prior_median_ms": 79.5300465,
+      "current_median_ms": 87.785022,
+      "prior_p99_ms": 86.22870101,
+      "current_p99_ms": 103.25676862,
+      "cross_node_ratio_for_internal_review": 1.1037969404431318
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/ruby",
+      "prior_median_ms": 136.6691935,
+      "current_median_ms": 151.581433,
+      "prior_p99_ms": 145.45494060000001,
+      "current_p99_ms": 185.43321771,
+      "cross_node_ratio_for_internal_review": 1.1091119301878372
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/small/ruby",
+      "prior_median_ms": 84.8421045,
+      "current_median_ms": 91.145403,
+      "prior_p99_ms": 97.91849272,
+      "current_p99_ms": 119.02777102,
+      "cross_node_ratio_for_internal_review": 1.0742944618965693
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/large/ruby",
+      "prior_median_ms": 195.3385505,
+      "current_median_ms": 233.3104255,
+      "prior_p99_ms": 209.54286086000002,
+      "current_p99_ms": 291.30635099,
+      "cross_node_ratio_for_internal_review": 1.1943900725320475
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/small/ruby",
+      "prior_median_ms": 82.9670675,
+      "current_median_ms": 102.33132649999999,
+      "prior_p99_ms": 85.47291741000001,
+      "current_p99_ms": 122.09563072,
+      "cross_node_ratio_for_internal_review": 1.233396931860946
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/large/ruby",
+      "prior_median_ms": 153.314657,
+      "current_median_ms": 180.156773,
+      "prior_p99_ms": 171.37180106,
+      "current_p99_ms": 421.9616421200001,
+      "cross_node_ratio_for_internal_review": 1.1750786032153466
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/small/ruby",
+      "prior_median_ms": 82.987491,
+      "current_median_ms": 111.993747,
+      "prior_p99_ms": 108.49419955,
+      "current_p99_ms": 658.0697173500001,
+      "cross_node_ratio_for_internal_review": 1.3495256411595815
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/large/ruby",
+      "prior_median_ms": 200.831042,
+      "current_median_ms": 253.568825,
+      "prior_p99_ms": 206.63969643,
+      "current_p99_ms": 884.7292870400001,
+      "cross_node_ratio_for_internal_review": 1.2625977661361734
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/ruby",
+      "prior_median_ms": 75.248958,
+      "current_median_ms": 89.612674,
+      "prior_p99_ms": 96.07906794,
+      "current_p99_ms": 120.05366605,
+      "cross_node_ratio_for_internal_review": 1.1908825900286883
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/ruby",
+      "prior_median_ms": 79.4127895,
+      "current_median_ms": 92.64378049999999,
+      "prior_p99_ms": 88.74945702,
+      "current_p99_ms": 116.77006731,
+      "cross_node_ratio_for_internal_review": 1.1666103291838148
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/lua54",
+      "prior_median_ms": 2.053718,
+      "current_median_ms": 2.3701755,
+      "prior_p99_ms": 2.83485562,
+      "current_p99_ms": 6.916939210000001,
+      "cross_node_ratio_for_internal_review": 1.1540900454687548
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/lua54",
+      "prior_median_ms": 1.578648,
+      "current_median_ms": 1.744043,
+      "prior_p99_ms": 2.0512337400000002,
+      "current_p99_ms": 2.04390717,
+      "cross_node_ratio_for_internal_review": 1.1047700310645565
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/lua54",
+      "prior_median_ms": 1.719569,
+      "current_median_ms": 1.9469400000000001,
+      "prior_p99_ms": 2.0889364500000003,
+      "current_p99_ms": 2.74168711,
+      "cross_node_ratio_for_internal_review": 1.132225575129582
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/lua54",
+      "prior_median_ms": 1.6528125,
+      "current_median_ms": 1.824909,
+      "prior_p99_ms": 1.83414638,
+      "current_p99_ms": 2.25997902,
+      "cross_node_ratio_for_internal_review": 1.1041234259784458
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/lua54",
+      "prior_median_ms": 1.7213285,
+      "current_median_ms": 1.9132470000000001,
+      "prior_p99_ms": 2.1400118900000002,
+      "current_p99_ms": 2.3804749500000004,
+      "cross_node_ratio_for_internal_review": 1.111494406791034
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/lua54",
+      "prior_median_ms": 2.122267,
+      "current_median_ms": 2.5740675,
+      "prior_p99_ms": 2.79610755,
+      "current_p99_ms": 2.97420891,
+      "cross_node_ratio_for_internal_review": 1.2128857961792743
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/lua54",
+      "prior_median_ms": 1.7750805,
+      "current_median_ms": 1.80948,
+      "prior_p99_ms": 2.06668479,
+      "current_p99_ms": 2.27934545,
+      "cross_node_ratio_for_internal_review": 1.0193791211159156
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/lua54",
+      "prior_median_ms": 3.9787535,
+      "current_median_ms": 5.164144500000001,
+      "prior_p99_ms": 5.18933964,
+      "current_p99_ms": 7.785067340000001,
+      "cross_node_ratio_for_internal_review": 1.297930243730857
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/lua54",
+      "prior_median_ms": 1.647039,
+      "current_median_ms": 1.822695,
+      "prior_p99_ms": 1.8163598600000002,
+      "current_p99_ms": 2.34679425,
+      "cross_node_ratio_for_internal_review": 1.1066495693180307
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/lua54",
+      "prior_median_ms": 2.4358630000000003,
+      "current_median_ms": 2.8858315,
+      "prior_p99_ms": 2.56033934,
+      "current_p99_ms": 3.50917852,
+      "cross_node_ratio_for_internal_review": 1.1847265219759895
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/lua54",
+      "prior_median_ms": 1.911631,
+      "current_median_ms": 2.270638,
+      "prior_p99_ms": 2.0495230700000002,
+      "current_p99_ms": 6.56642014,
+      "cross_node_ratio_for_internal_review": 1.1878014114648694
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/lua54",
+      "prior_median_ms": 22.628803,
+      "current_median_ms": 27.405070000000002,
+      "prior_p99_ms": 27.39736308,
+      "current_p99_ms": 35.39192425,
+      "cross_node_ratio_for_internal_review": 1.2110702452975528
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/lua54",
+      "prior_median_ms": 1.732771,
+      "current_median_ms": 1.8589945,
+      "prior_p99_ms": 1.96548074,
+      "current_p99_ms": 2.45406055,
+      "cross_node_ratio_for_internal_review": 1.0728448825609385
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/lua54",
+      "prior_median_ms": 6.97858,
+      "current_median_ms": 8.174984,
+      "prior_p99_ms": 7.38035002,
+      "current_p99_ms": 9.62894617,
+      "cross_node_ratio_for_internal_review": 1.1714394618962598
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/lua54",
+      "prior_median_ms": 1.8621075,
+      "current_median_ms": 2.249337,
+      "prior_p99_ms": 2.17310421,
+      "current_p99_ms": 2.63050807,
+      "cross_node_ratio_for_internal_review": 1.2079522798764304
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/lua54",
+      "prior_median_ms": 39.9691095,
+      "current_median_ms": 45.22254,
+      "prior_p99_ms": 41.97472808,
+      "current_p99_ms": 58.25726722,
+      "cross_node_ratio_for_internal_review": 1.1314372665720762
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/lua54",
+      "prior_median_ms": 1.6999710000000001,
+      "current_median_ms": 1.9589690000000002,
+      "prior_p99_ms": 2.1521346699999997,
+      "current_p99_ms": 2.4793462500000003,
+      "cross_node_ratio_for_internal_review": 1.1523543636920865
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/lua54",
+      "prior_median_ms": 7.826093999999999,
+      "current_median_ms": 9.101969,
+      "prior_p99_ms": 8.53793913,
+      "current_p99_ms": 14.28608142,
+      "cross_node_ratio_for_internal_review": 1.1630283254967295
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/lua54",
+      "prior_median_ms": 1.63669,
+      "current_median_ms": 2.170261,
+      "prior_p99_ms": 1.84451249,
+      "current_p99_ms": 2.4459750700000003,
+      "cross_node_ratio_for_internal_review": 1.3260061465518822
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/lua54",
+      "prior_median_ms": 3.2332495000000003,
+      "current_median_ms": 3.5391535,
+      "prior_p99_ms": 4.29392462,
+      "current_p99_ms": 4.72872456,
+      "cross_node_ratio_for_internal_review": 1.0946119376187948
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/lua54",
+      "prior_median_ms": 2.16676,
+      "current_median_ms": 2.534869,
+      "prior_p99_ms": 2.6632896600000002,
+      "current_p99_ms": 3.21549586,
+      "cross_node_ratio_for_internal_review": 1.1698891432369067
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/lua54",
+      "prior_median_ms": 38.365925000000004,
+      "current_median_ms": 43.349238,
+      "prior_p99_ms": 40.73811085,
+      "current_p99_ms": 58.00180109,
+      "cross_node_ratio_for_internal_review": 1.1298890356481694
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/lua54",
+      "prior_median_ms": 6.4537545000000005,
+      "current_median_ms": 8.4377455,
+      "prior_p99_ms": 7.990003420000001,
+      "current_p99_ms": 10.34174662,
+      "cross_node_ratio_for_internal_review": 1.3074165588418338
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/lua54",
+      "prior_median_ms": 8.9782025,
+      "current_median_ms": 11.870217,
+      "prior_p99_ms": 11.15073537,
+      "current_p99_ms": 14.44518137,
+      "cross_node_ratio_for_internal_review": 1.3221150892954352
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/luajit",
+      "prior_median_ms": 1.7001895,
+      "current_median_ms": 2.370113,
+      "prior_p99_ms": 2.29600671,
+      "current_p99_ms": 2.75659464,
+      "cross_node_ratio_for_internal_review": 1.394028724445128
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/luajit",
+      "prior_median_ms": 1.4472079999999998,
+      "current_median_ms": 1.8147285,
+      "prior_p99_ms": 1.66321244,
+      "current_p99_ms": 2.15567765,
+      "cross_node_ratio_for_internal_review": 1.253951401595348
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/luajit",
+      "prior_median_ms": 1.4786725,
+      "current_median_ms": 1.8087885,
+      "prior_p99_ms": 1.89362672,
+      "current_p99_ms": 9.178783180000002,
+      "cross_node_ratio_for_internal_review": 1.2232515989849002
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/luajit",
+      "prior_median_ms": 1.4677470000000001,
+      "current_median_ms": 1.636343,
+      "prior_p99_ms": 1.80003783,
+      "current_p99_ms": 2.0261784400000002,
+      "cross_node_ratio_for_internal_review": 1.1148672080406228
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/luajit",
+      "prior_median_ms": 1.7180469999999999,
+      "current_median_ms": 1.952186,
+      "prior_p99_ms": 1.9216790400000001,
+      "current_p99_ms": 2.30413805,
+      "cross_node_ratio_for_internal_review": 1.136282069116852
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/luajit",
+      "prior_median_ms": 1.6420225,
+      "current_median_ms": 1.81988,
+      "prior_p99_ms": 2.00091332,
+      "current_p99_ms": 2.20794287,
+      "cross_node_ratio_for_internal_review": 1.1083161162529747
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/luajit",
+      "prior_median_ms": 1.535607,
+      "current_median_ms": 1.6459635000000001,
+      "prior_p99_ms": 1.9324012000000002,
+      "current_p99_ms": 2.16386821,
+      "cross_node_ratio_for_internal_review": 1.071865067038637
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/luajit",
+      "prior_median_ms": 1.618139,
+      "current_median_ms": 1.8807170000000002,
+      "prior_p99_ms": 1.92436779,
+      "current_p99_ms": 2.42734934,
+      "cross_node_ratio_for_internal_review": 1.1622715971866449
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/luajit",
+      "prior_median_ms": 1.5302875,
+      "current_median_ms": 1.78871,
+      "prior_p99_ms": 1.80617537,
+      "current_p99_ms": 2.15355337,
+      "cross_node_ratio_for_internal_review": 1.1688718623134542
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/luajit",
+      "prior_median_ms": 1.637338,
+      "current_median_ms": 1.741306,
+      "prior_p99_ms": 1.87164653,
+      "current_p99_ms": 2.03956943,
+      "cross_node_ratio_for_internal_review": 1.0634981903553207
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/luajit",
+      "prior_median_ms": 1.585348,
+      "current_median_ms": 1.8097645,
+      "prior_p99_ms": 1.71936919,
+      "current_p99_ms": 2.1888303600000003,
+      "cross_node_ratio_for_internal_review": 1.1415566172222125
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/luajit",
+      "prior_median_ms": 3.4505410000000003,
+      "current_median_ms": 3.5381595,
+      "prior_p99_ms": 3.80817252,
+      "current_p99_ms": 4.09651943,
+      "cross_node_ratio_for_internal_review": 1.025392684799282
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/luajit",
+      "prior_median_ms": 1.5921375,
+      "current_median_ms": 1.7410495,
+      "prior_p99_ms": 2.1094146599999997,
+      "current_p99_ms": 2.25098165,
+      "cross_node_ratio_for_internal_review": 1.0935296103508647
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/luajit",
+      "prior_median_ms": 2.8551539999999997,
+      "current_median_ms": 3.2850634999999997,
+      "prior_p99_ms": 3.36917629,
+      "current_p99_ms": 7.852091100000001,
+      "cross_node_ratio_for_internal_review": 1.1505731389620315
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/luajit",
+      "prior_median_ms": 1.730459,
+      "current_median_ms": 2.2690215,
+      "prior_p99_ms": 2.0043791300000002,
+      "current_p99_ms": 3.2392926600000003,
+      "cross_node_ratio_for_internal_review": 1.311225229837864
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/luajit",
+      "prior_median_ms": 36.350168,
+      "current_median_ms": 45.4826675,
+      "prior_p99_ms": 39.99506186,
+      "current_p99_ms": 55.43577355,
+      "cross_node_ratio_for_internal_review": 1.2512367893320329
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/luajit",
+      "prior_median_ms": 1.5973885,
+      "current_median_ms": 1.924756,
+      "prior_p99_ms": 1.83818324,
+      "current_p99_ms": 4.0651209900000005,
+      "cross_node_ratio_for_internal_review": 1.204939186678757
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/luajit",
+      "prior_median_ms": 3.1947055,
+      "current_median_ms": 3.343509,
+      "prior_p99_ms": 9.11431588,
+      "current_p99_ms": 4.09222123,
+      "cross_node_ratio_for_internal_review": 1.0465781587692513
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/luajit",
+      "prior_median_ms": 1.4494015,
+      "current_median_ms": 1.8162120000000002,
+      "prior_p99_ms": 2.60629305,
+      "current_p99_ms": 4.415016560000001,
+      "cross_node_ratio_for_internal_review": 1.2530772184242946
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/luajit",
+      "prior_median_ms": 2.3186964999999997,
+      "current_median_ms": 2.5571710000000003,
+      "prior_p99_ms": 2.98616092,
+      "current_p99_ms": 3.1299138099999997,
+      "cross_node_ratio_for_internal_review": 1.1028485185534203
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/luajit",
+      "prior_median_ms": 2.3493985,
+      "current_median_ms": 2.8242615,
+      "prior_p99_ms": 2.66441377,
+      "current_p99_ms": 3.24355634,
+      "cross_node_ratio_for_internal_review": 1.202121096101832
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/luajit",
+      "prior_median_ms": 18.4128425,
+      "current_median_ms": 21.335542500000003,
+      "prior_p99_ms": 21.51278526,
+      "current_p99_ms": 32.20768093,
+      "cross_node_ratio_for_internal_review": 1.1587316026843766
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/luajit",
+      "prior_median_ms": 5.717968,
+      "current_median_ms": 6.8218785,
+      "prior_p99_ms": 6.59543649,
+      "current_p99_ms": 10.81883395,
+      "cross_node_ratio_for_internal_review": 1.1930599296813134
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/luajit",
+      "prior_median_ms": 8.9262935,
+      "current_median_ms": 10.0538805,
+      "prior_p99_ms": 9.71395403,
+      "current_p99_ms": 12.373292619999999,
+      "cross_node_ratio_for_internal_review": 1.1263219722721418
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/node",
+      "prior_median_ms": 42.227323999999996,
+      "current_median_ms": 58.935255,
+      "prior_p99_ms": 56.312766960000005,
+      "current_p99_ms": 73.77584533,
+      "cross_node_ratio_for_internal_review": 1.3956663462738015
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/node",
+      "prior_median_ms": 33.112909,
+      "current_median_ms": 37.773138,
+      "prior_p99_ms": 39.3481344,
+      "current_p99_ms": 43.4899507,
+      "cross_node_ratio_for_internal_review": 1.140737529282009
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/node",
+      "prior_median_ms": 37.831884,
+      "current_median_ms": 42.4409795,
+      "prior_p99_ms": 41.80949733,
+      "current_p99_ms": 57.465538769999995,
+      "cross_node_ratio_for_internal_review": 1.121830979921592
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/node",
+      "prior_median_ms": 36.6620675,
+      "current_median_ms": 44.086839,
+      "prior_p99_ms": 41.01789876,
+      "current_p99_ms": 50.16406045,
+      "cross_node_ratio_for_internal_review": 1.2025191705295943
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/node",
+      "prior_median_ms": 38.5106275,
+      "current_median_ms": 43.471374499999996,
+      "prior_p99_ms": 44.55747892,
+      "current_p99_ms": 45.94943406,
+      "cross_node_ratio_for_internal_review": 1.128815013466088
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/node",
+      "prior_median_ms": 42.493987000000004,
+      "current_median_ms": 49.367977999999994,
+      "prior_p99_ms": 46.82790357,
+      "current_p99_ms": 61.38134997,
+      "cross_node_ratio_for_internal_review": 1.161763851436204
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/node",
+      "prior_median_ms": 37.7489425,
+      "current_median_ms": 44.3049645,
+      "prior_p99_ms": 44.14361388,
+      "current_p99_ms": 52.17745679,
+      "cross_node_ratio_for_internal_review": 1.1736743221349843
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/node",
+      "prior_median_ms": 43.2532395,
+      "current_median_ms": 47.298196000000004,
+      "prior_p99_ms": 49.923977730000004,
+      "current_p99_ms": 53.288406689999995,
+      "cross_node_ratio_for_internal_review": 1.093518001119893
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/node",
+      "prior_median_ms": 39.236054,
+      "current_median_ms": 43.934154,
+      "prior_p99_ms": 41.83983713,
+      "current_p99_ms": 51.83480037,
+      "cross_node_ratio_for_internal_review": 1.1197393601303536
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/node",
+      "prior_median_ms": 46.644795,
+      "current_median_ms": 54.604892,
+      "prior_p99_ms": 50.454559849999995,
+      "current_p99_ms": 62.23361963,
+      "cross_node_ratio_for_internal_review": 1.170653488776186
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/node",
+      "prior_median_ms": 42.0336015,
+      "current_median_ms": 41.587989,
+      "prior_p99_ms": 49.82826828,
+      "current_p99_ms": 52.37786003,
+      "cross_node_ratio_for_internal_review": 0.9893986600220301
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/node",
+      "prior_median_ms": 45.97833,
+      "current_median_ms": 52.938888,
+      "prior_p99_ms": 53.63601192,
+      "current_p99_ms": 60.47089934,
+      "cross_node_ratio_for_internal_review": 1.1513877950765066
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/node",
+      "prior_median_ms": 38.521744999999996,
+      "current_median_ms": 41.4235805,
+      "prior_p99_ms": 47.10999648,
+      "current_p99_ms": 50.30377233,
+      "cross_node_ratio_for_internal_review": 1.0753298039847365
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/node",
+      "prior_median_ms": 54.561379,
+      "current_median_ms": 66.262324,
+      "prior_p99_ms": 62.607468170000004,
+      "current_p99_ms": 75.89872005,
+      "cross_node_ratio_for_internal_review": 1.2144547153032919
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/node",
+      "prior_median_ms": 40.7115505,
+      "current_median_ms": 43.25889,
+      "prior_p99_ms": 52.86072626,
+      "current_p99_ms": 51.7564469,
+      "cross_node_ratio_for_internal_review": 1.0625704368591906
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/node",
+      "prior_median_ms": 53.1195855,
+      "current_median_ms": 63.716302999999996,
+      "prior_p99_ms": 58.60499803,
+      "current_p99_ms": 78.52619282,
+      "cross_node_ratio_for_internal_review": 1.19948795534182
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/node",
+      "prior_median_ms": 38.551099,
+      "current_median_ms": 43.969198000000006,
+      "prior_p99_ms": 47.88092671,
+      "current_p99_ms": 53.859137329999996,
+      "cross_node_ratio_for_internal_review": 1.1405433085059393
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/node",
+      "prior_median_ms": 51.7189175,
+      "current_median_ms": 67.907319,
+      "prior_p99_ms": 56.402439130000005,
+      "current_p99_ms": 84.14861234,
+      "cross_node_ratio_for_internal_review": 1.3130073536438576
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/small/node",
+      "prior_median_ms": 39.306698499999996,
+      "current_median_ms": 44.0424725,
+      "prior_p99_ms": 50.34049408,
+      "current_p99_ms": 53.72673254,
+      "cross_node_ratio_for_internal_review": 1.1204826195209452
+    },
+    {
+      "file": "scripting.json",
+      "id": "dynamic-programming/fibonacci/large/node",
+      "prior_median_ms": 45.761790500000004,
+      "current_median_ms": 53.776883,
+      "prior_p99_ms": 62.13659262,
+      "current_p99_ms": 75.49103668,
+      "cross_node_ratio_for_internal_review": 1.1751481402372137
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/small/node",
+      "prior_median_ms": 48.1262635,
+      "current_median_ms": 53.5550975,
+      "prior_p99_ms": 60.34680203,
+      "current_p99_ms": 67.71784931,
+      "cross_node_ratio_for_internal_review": 1.1128039786425556
+    },
+    {
+      "file": "scripting.json",
+      "id": "graphs-trees-search/bfs/large/node",
+      "prior_median_ms": 99.3139555,
+      "current_median_ms": 124.625251,
+      "prior_p99_ms": 151.61129051999998,
+      "current_p99_ms": 148.02694141,
+      "cross_node_ratio_for_internal_review": 1.2548614177390205
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/small/node",
+      "prior_median_ms": 37.884020500000005,
+      "current_median_ms": 46.881187499999996,
+      "prior_p99_ms": 43.079085580000005,
+      "current_p99_ms": 53.11322421,
+      "cross_node_ratio_for_internal_review": 1.2374924013146913
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-parse/large/node",
+      "prior_median_ms": 73.331912,
+      "current_median_ms": 91.014093,
+      "prior_p99_ms": 88.943567,
+      "current_p99_ms": 104.07913415,
+      "cross_node_ratio_for_internal_review": 1.2411253234471782
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/small/node",
+      "prior_median_ms": 39.3952925,
+      "current_median_ms": 47.9185775,
+      "prior_p99_ms": 59.45616168,
+      "current_p99_ms": 58.71391935,
+      "cross_node_ratio_for_internal_review": 1.2163528802330887
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-transform/large/node",
+      "prior_median_ms": 85.3523385,
+      "current_median_ms": 114.3680985,
+      "prior_p99_ms": 102.97884437,
+      "current_p99_ms": 140.077461,
+      "cross_node_ratio_for_internal_review": 1.3399527243181508
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/small/node",
+      "prior_median_ms": 41.6149315,
+      "current_median_ms": 47.100933999999995,
+      "prior_p99_ms": 47.91918838,
+      "current_p99_ms": 57.44535262,
+      "cross_node_ratio_for_internal_review": 1.1318277431262862
+    },
+    {
+      "file": "scripting.json",
+      "id": "structured-data/json-traverse/large/node",
+      "prior_median_ms": 76.7546855,
+      "current_median_ms": 90.148012,
+      "prior_p99_ms": 89.02426543,
+      "current_p99_ms": 110.33505653,
+      "cross_node_ratio_for_internal_review": 1.1744952300013007
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/node",
+      "prior_median_ms": 39.191074,
+      "current_median_ms": 43.0569755,
+      "prior_p99_ms": 42.53909022,
+      "current_p99_ms": 58.22515913,
+      "cross_node_ratio_for_internal_review": 1.0986423975010229
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/node",
+      "prior_median_ms": 58.148672000000005,
+      "current_median_ms": 64.48736550000001,
+      "prior_p99_ms": 59.22831471,
+      "current_p99_ms": 80.65678004,
+      "cross_node_ratio_for_internal_review": 1.1090083966148014
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/small/bash",
+      "prior_median_ms": 2.525123,
+      "current_median_ms": 4.010698,
+      "prior_p99_ms": 3.35961333,
+      "current_p99_ms": 6.4105561600000005,
+      "cross_node_ratio_for_internal_review": 1.588317876000496
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/noop/large/bash",
+      "prior_median_ms": 1.949686,
+      "current_median_ms": 2.325989,
+      "prior_p99_ms": 2.60382467,
+      "current_p99_ms": 2.7684390000000003,
+      "cross_node_ratio_for_internal_review": 1.193006976508012
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/small/bash",
+      "prior_median_ms": 2.0787005,
+      "current_median_ms": 2.3221055,
+      "prior_p99_ms": 2.60717815,
+      "current_p99_ms": 6.22535839,
+      "cross_node_ratio_for_internal_review": 1.1170947907117934
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/output/large/bash",
+      "prior_median_ms": 2.0300635,
+      "current_median_ms": 2.2197690000000003,
+      "prior_p99_ms": 2.48337583,
+      "current_p99_ms": 2.78372145,
+      "cross_node_ratio_for_internal_review": 1.0934480620926392
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/small/bash",
+      "prior_median_ms": 5.211837,
+      "current_median_ms": 6.406419,
+      "prior_p99_ms": 5.41862682,
+      "current_p99_ms": 9.21975317,
+      "cross_node_ratio_for_internal_review": 1.2292055565053166
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/loops/large/bash",
+      "prior_median_ms": 304.999147,
+      "current_median_ms": 337.1332985,
+      "prior_p99_ms": 311.94644379,
+      "current_p99_ms": 434.48027701,
+      "cross_node_ratio_for_internal_review": 1.1053581684279268
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/small/bash",
+      "prior_median_ms": 7.453174,
+      "current_median_ms": 8.4603115,
+      "prior_p99_ms": 7.86624895,
+      "current_p99_ms": 11.84374083,
+      "cross_node_ratio_for_internal_review": 1.135128671355318
+    },
+    {
+      "file": "scripting.json",
+      "id": "sanity/function-calls/large/bash",
+      "prior_median_ms": 545.855832,
+      "current_median_ms": 618.6551195,
+      "prior_p99_ms": 564.64211771,
+      "current_p99_ms": 692.53903273,
+      "cross_node_ratio_for_internal_review": 1.1333672432027804
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/small/bash",
+      "prior_median_ms": 5.739755,
+      "current_median_ms": 7.10344,
+      "prior_p99_ms": 5.916536020000001,
+      "current_p99_ms": 9.00618049,
+      "cross_node_ratio_for_internal_review": 1.237585924834771
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/scan/large/bash",
+      "prior_median_ms": 362.902532,
+      "current_median_ms": 397.687159,
+      "prior_p99_ms": 386.61283789,
+      "current_p99_ms": 551.41862886,
+      "cross_node_ratio_for_internal_review": 1.0958511554281467
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/small/bash",
+      "prior_median_ms": 9.321988000000001,
+      "current_median_ms": 10.396411,
+      "prior_p99_ms": 11.20822879,
+      "current_p99_ms": 13.54074625,
+      "cross_node_ratio_for_internal_review": 1.1152568529373776
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/frequency-count/large/bash",
+      "prior_median_ms": 690.298445,
+      "current_median_ms": 802.53895,
+      "prior_p99_ms": 747.6122596,
+      "current_p99_ms": 2482.14798606,
+      "cross_node_ratio_for_internal_review": 1.1625970706047295
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/small/bash",
+      "prior_median_ms": 14.3417745,
+      "current_median_ms": 19.4100615,
+      "prior_p99_ms": 15.87910739,
+      "current_p99_ms": 54.6335973,
+      "cross_node_ratio_for_internal_review": 1.3533932987162782
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sliding-window/large/bash",
+      "prior_median_ms": 5288.000647,
+      "current_median_ms": 5538.100317,
+      "prior_p99_ms": 5501.94833159,
+      "current_p99_ms": 5737.8349230799995,
+      "cross_node_ratio_for_internal_review": 1.0472956958017559
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/small/bash",
+      "prior_median_ms": 10.0010835,
+      "current_median_ms": 12.268669,
+      "prior_p99_ms": 11.52671904,
+      "current_p99_ms": 16.3998275,
+      "cross_node_ratio_for_internal_review": 1.2267339833729014
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/sort-index/large/bash",
+      "prior_median_ms": 261.8356575,
+      "current_median_ms": 296.051877,
+      "prior_p99_ms": 304.97325055000005,
+      "current_p99_ms": 323.44258657,
+      "cross_node_ratio_for_internal_review": 1.130678227047819
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/small/bash",
+      "prior_median_ms": 5.3198644999999996,
+      "current_median_ms": 5.844926,
+      "prior_p99_ms": 6.45454136,
+      "current_p99_ms": 7.655648510000001,
+      "cross_node_ratio_for_internal_review": 1.0986982845145774
+    },
+    {
+      "file": "scripting.json",
+      "id": "arrays-strings-hash/map-set/large/bash",
+      "prior_median_ms": 294.924226,
+      "current_median_ms": 306.5636355,
+      "prior_p99_ms": 313.49237849,
+      "current_p99_ms": 358.40759271,
+      "cross_node_ratio_for_internal_review": 1.039465762639655
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/small/bash",
+      "prior_median_ms": 6.740171,
+      "current_median_ms": 8.8702005,
+      "prior_p99_ms": 7.7880531600000005,
+      "current_p99_ms": 13.09467972,
+      "cross_node_ratio_for_internal_review": 1.3160200980064154
+    },
+    {
+      "file": "scripting.json",
+      "id": "filesystem/traverse/large/bash",
+      "prior_median_ms": 9.9803935,
+      "current_median_ms": 12.7720005,
+      "prior_p99_ms": 11.03118538,
+      "current_p99_ms": 16.285046570000002,
+      "cross_node_ratio_for_internal_review": 1.2797091116697954
+    }
+  ]
+}
