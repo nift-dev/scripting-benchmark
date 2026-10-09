@@ -1,0 +1,19 @@
+{
+  "official_raw_files": {
+    "scripting.json": {
+      "schema": 3,
+      "sha256": "3f78c86fbe34857311b65230ce480794be092bdb8eff622972a2a174260e2857",
+      "jobs": 188,
+      "measured_samples": 1880,
+      "retained_warmups": 376
+    }
+  },
+  "helper_tests_before_and_after": 3,
+  "summary_recomputation": "All retained distribution fields equal independent summarizer output",
+  "clean_checkout": true,
+  "affinity": [
+    0
+  ],
+  "no_discarded_samples": true,
+  "smoke_full_matrix_passed": true
+}

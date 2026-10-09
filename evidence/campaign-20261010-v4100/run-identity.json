@@ -1,0 +1,31 @@
+{
+  "nift": "2eaec7d70e9ce2e698d0ba23a605fb9cf85317ff",
+  "shell-benchmark": "48a4a8e3e1f3e1ccf2c61fc7f8a7fd3a490ab4a1",
+  "scripting-benchmark": "6f5b0e3d7c977fca25758c6e2dd2189b67d209ea",
+  "lab": "36c1dcbad0acb88c4a82e08f3ca65500ff3c6a63",
+  "lab/public": "8d0cc21d029958dd2e6c66d507730c2c570e039e",
+  "series": "20261010-v4100",
+  "version": "4.10.0",
+  "nift_binary_sha256": "e7cb28d6150c797acbb52a618faff3cf981281b9ea4e91a8c478062242f0c3a2",
+  "compiler_build": "Native Make; GCC/G++ 13.3.0, make -j2, identical default flags",
+  "suite": "scripting",
+  "node": {
+    "label": "nift-scripting-20261010-v4100",
+    "type": "g6-standard-4",
+    "region": "us-east",
+    "image": "linode/ubuntu24.04",
+    "created": "2026-10-09T18:09:51",
+    "specs": {
+      "disk": 163840,
+      "memory": 8192,
+      "vcpus": 4,
+      "gpus": 0,
+      "transfer": 5000
+    }
+  },
+  "official_started_utc": "2026-10-09T18:21:26Z",
+  "official_ended_utc": "2026-10-09T18:25:58Z",
+  "build_command": "make -j2; make install PREFIX=/opt/campaign/tools",
+  "build_flags": "Native Make defaults; C++17/C99 -O2; no CPU-specific architecture flags",
+  "measurement_vs_publication": "Frozen suite SHA above was executed; later evidence commits do not change benchmark code."
+}
